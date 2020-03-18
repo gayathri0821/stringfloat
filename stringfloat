@@ -1,0 +1,37 @@
+package bootcamp3;
+
+import java.io.IOException;
+//create class stringfloat
+public class Stringfloat 
+{
+	public static void main(String args[])throws IOException
+	{
+		//initialize the string  variable
+		String s="some string";
+		//using try catch block to handle exceptions
+		try
+		{
+		
+		Float r=new Float(s.substring(0,4));
+		//prompt the user for conversion of string to float
+		System.out.println("the conversion of string to float is:"+r);
+		
+		}//end of try block
+		catch(NumberFormatException ne)
+		{
+			System.out.println("r=0");
+		}//end of catch block
+		
+		catch(Exception e)
+		{
+			Float r1=new Float(s.substring(0,3));
+			System.out.println("the conversion of string to float is"+r1);
+		
+		
+	}//end of catch block
+
+
+}//end of main method
+}//end of class block
+
+
